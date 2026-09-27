@@ -1,0 +1,14 @@
+# C/C++ compiled files
+*.exe
+*.out
+
+# Java compiled files
+*.class
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE files
+.vscode/
+.idea/
