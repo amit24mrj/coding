@@ -1,0 +1,7 @@
+print("hello world", end=" ")
+print("My name is Amit kumar")
+print(547)
+print(4)
+print(4+5)
+print(5*4)
+print("I am ",20, "years old")

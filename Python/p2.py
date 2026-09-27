@@ -1,0 +1,17 @@
+x=str(3)
+y=int(3)
+z=float(3)
+print(x)
+print(type(x))
+print(y)
+print(type(y))
+print(z)
+print(type(z))
+a,b,c="Amit", "Ram", "Shyam"
+print(a)
+print(b)
+print(c)
+s=d=t="Anushka"
+print(s)
+print(d)
+print(t)
