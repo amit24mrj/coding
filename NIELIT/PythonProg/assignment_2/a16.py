@@ -1,0 +1,3 @@
+x=0x2A+0xAA
+y=0o22
+print(x+y)
