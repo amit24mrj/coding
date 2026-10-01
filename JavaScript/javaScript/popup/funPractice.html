@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <script>
+        function startQuiz(){
+            let answer=prompt("2 + 2 kya hota hai?")
+            if(answer==="4"){
+                alert("sahi jawab, Bhai!")
+            }
+            else{
+                confirm("Galat jawab! Dubara try krega?")
+            }
+        }
+    </script>
+</body>
+</html>

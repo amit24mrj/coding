@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .customAlert{
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .customAlert.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="showCustomAlert()">Show Custom</button>
+    <div id="customAlert" class="custom-alert" role="dialog" aria-labelledby="modalTitle" id="myModal">
+        <h2 id="modalTitle"> Custome Model</h2>
+        <button id="closeAlert" class="close-alert" onclick="closeCustomAlert()" aria-label="Close modal">Close</button>
+    </div>
+    <script>
+        function showCustomAlert(){
+            document.getElementById("customAlert").classList.add("show")
+        }
+        function closeCustomAlert(){
+            document.getElementById("closeAlert").classList.remove("show")
+        }
+    </script>
+</body>
+</html>

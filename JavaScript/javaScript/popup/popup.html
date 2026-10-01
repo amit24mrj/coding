@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .model{
+            display :none; 
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px dotted black;
+
+        }
+        .model.show{
+            display: block;
+        }
+        </style>
+</head>
+<body>
+    <button onclick="showModel()">click me</button>
+    <div id="myModel" class="model">
+        <p>Hello, this is costem model</p>
+        <button onclick="closeModel()">Close</button>
+    </div>
+    <script>
+        function showModel(){
+            document.getElementById("myModel").classList.add("show")
+        }
+        function closeModel(){
+            document.getElementById("myModel").classList.remove("show")
+        }
+    </script>
+</body>
+</html>

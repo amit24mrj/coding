@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Amit</h1>
+    <p class="para">ram is going to school</p>
+    <p class="para">mohan is studing book</p>
+    <p class="para">sarita is a good girl</p>
+    <p class="para">mohan ram are both brother</p>
+    <button id="button">click</button>
+    <script>
+        let heading=document.getElementById('heading');
+        heading.textContent='Ram';
+        // heading.innerHTML='shyam';
+        let para=document.getElementsByClassName('para');
+        for(let i=0;i<para.length; i++){
+            para[i].style.color='red';
+        }
+        let button=document.getElementById('button');
+        button.addEventListener('click',function(event){
+            alert('Button clicked!');
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>

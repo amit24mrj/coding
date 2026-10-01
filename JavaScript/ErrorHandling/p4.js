@@ -1,0 +1,12 @@
+// Async Error Handling
+async function example(){
+    try{
+        let response= await fetch("(https://www.youtube.com/@quicktechpoint)");
+        let data =await response.json();
+        console.log(data);
+    }
+    catch(error){
+        console.log("Error: "+error.message);
+    }
+}
+example();

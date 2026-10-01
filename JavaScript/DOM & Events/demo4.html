@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="con"></div>
+    <!-- <button id="con">click</button> -->
+    <script>
+        let con=document.getElementById('con');
+        con.addEventListener('click',function(event){
+            if(event.target.tagName==='BUTTON'){
+                console.log('button clicked!');
+            }
+        });
+    </script>
+</body>
+</html>
+<!-- pending.... -->

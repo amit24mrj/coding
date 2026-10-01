@@ -1,0 +1,28 @@
+<!-- Accessing and Manipulating DOM Elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to my page</h1>
+    <h1 class="hhh">Ram</h1>
+    <h1 class="hhh">Mohan</h1>
+    <p class="hhh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ut praesentium nam expedita inventore beatae tenetur ex ab iste omnis illum illo, debitis soluta molestiae aut maxime nihil quidem facilis?</p>
+    <p id="paragraph">This is a paragraph of text.</p>
+    <script>
+        let heading=document.getElementById('heading');heading.innerHTML='new heading';
+        let hhh=document.getElementsByClassName('hhh');
+        hhh[0].innerHTML='Amit';
+        hhh[1].innerHTML='Rahul';
+        hhh[2].innerHTML='The honorable chief gest manager prncipal and commming gental men and my dear freands'
+        let para=document.getElementsByTagName('p');
+        para[1].innerHTML='this is javaScript paragraph';
+        para[0].style.color='red';
+        para[1].style.backgroundColor='green';
+
+    </script>
+</body>
+</html>
